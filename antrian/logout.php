@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['userlogin']);
+unset($_SESSION['userlogin-name']);
+unset($_SESSION['username']);
+unset($_SESSION['id_pegawai']);
+unset($_SESSION['groupId']);
+header("Location:login.php");
+?>

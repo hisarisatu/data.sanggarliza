@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>==System Antrian==</title>
+
+        <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/jquery.ui.theme.css" rel="stylesheet">
+        <link href="css/jquery.ui.theme.font-awesome.css" rel="stylesheet">
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="headerwrapper">
+                <div class="header-left">
+                    <a href="index-2.html" class="logo">
+                        <img src="images/logo.png" alt="" /> 
+                    </a>
+                    <div class="pull-right">
+                        <a href="#" class="menu-collapse">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div><!-- header-left -->
+
+                <div class="header-right">
+
+                    <div class="pull-right">
+ 
+ 
+
+                     
+
+                        <div class="btn-group btn-group-option">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><a href="#"><i class="glyphicon glyphicon-user"></i> My Profile</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>Sign Out</a></li>
+                            </ul>
+                        </div><!-- btn-group -->
+
+                    </div><!-- pull-right -->
+
+                </div><!-- header-right -->
+
+            </div><!-- headerwrapper -->
+        </header>
+
+        <section>
+            <div class="mainwrapper">
+                <div class="leftpanel">
+                    <div class="media profile-left">
+                        <a class="pull-left profile-thumb" href="profile.html">
+                            <img class="img-circle" src="images/photos/profile.png" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Elen Adarna</h4>
+                            <small class="text-muted">Beach Lover</small>
+                        </div>
+                    </div><!-- media -->
+
+                    <h5 class="leftpanel-title">Navigation</h5>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="index-2.html"><i class="fa fa-home"></i> <span>Monitoring</span></a></li>
+                        <li class="parent"><a href="#"><i class="fa fa-bars"></i> <span>Tables</span></a>
+                            <ul class="children">
+                                <li><a href="basic-tables.html">Basic Tables</a></li>
+                                <li><a href="data-tables.html">Data Tables</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div><!-- leftpanel -->
+
+                <div class="mainpanel">
+                    <div class="pageheader">
+                        <div class="media">
+                            <div class="pageicon pull-left">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="media-body">
+                               <!-- <input type="text" style="height: 51px; width: 30%" id="tags" class="form-control" placeholder="Nama Pelanggan"><button class="btn btn-default">Default</button>-->
+                               <div class="input-group mb15">
+                                    <input id="tags" type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- media -->
+                    </div><!-- pageheader -->
+
+                    <div class="contentpanel">
+
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                                <form action="http://themepixels.com/demo/webpage/chain/form-validation.html" id="basicForm" novalidate="novalidate">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-btns" style="display: none;">
+                                            <a title="" data-toggle="tooltip" class="panel-minimize tooltips" href="#" data-original-title="Minimize Panel"><i class="fa fa-minus"></i></a>
+                                            <a title="" data-toggle="tooltip" class="panel-close tooltips" href="#" data-original-title="Close Panel"><i class="fa fa-times"></i></a>
+                                        </div><!-- panel-btns -->
+                                        <h4 class="panel-title">Info Customer</h4>
+                                        <!--<p>Please provide your name, email address (won't be published) and a comment.</p>-->
+                                    </div><!-- panel-heading -->
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Name <span class="asterisk">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" required="" placeholder="Type your name..." class="form-control" name="name">
+                                                </div>
+                                            </div><!-- form-group -->
+                                          
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Email <span class="asterisk">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" required="" placeholder="Type your email..." class="form-control" name="email">
+                                                </div>
+                                            </div><!-- form-group -->
+                                          
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">URL</label>
+                                                <div class="col-sm-9">
+                                                    <input type="url" class="form-control" name="url">
+                                                </div>
+                                            </div><!-- form-group -->
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Comment <span class="asterisk">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <textarea required="" placeholder="Type your comment..." class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div><!-- form-group -->
+                                        </div><!-- row -->
+                                    </div><!-- panel-body -->
+                                    <div class="panel-footer">
+                                      <div class="row">
+                                        <div class="col-sm-9 col-sm-offset-3">
+                                            <button class="btn btn-primary mr5">Submit</button>
+                                            <button class="btn btn-dark" type="reset">Reset</button>
+                                        </div>
+                                      </div>
+                                    </div><!-- panel-footer -->  
+                                </div><!-- panel -->
+                                </form>
+                                
+                            </div>
+                        </div>
+
+
+
+                    </div><!-- contentpanel -->
+
+                </div><!-- mainpanel -->
+            </div><!-- mainwrapper -->
+        </section>
+
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/retina.min.js"></script>
+        <script src="js/jquery.cookies.js"></script>
+
+        <script src="js/flot/jquery.flot.min.js"></script>
+        <script src="js/flot/jquery.flot.resize.min.js"></script>
+        <script src="js/flot/jquery.flot.spline.min.js"></script>
+        <script src="js/jquery.sparkline.min.js"></script>
+        <script src="js/morris.min.js"></script>
+        <script src="js/raphael-2.1.0.min.js"></script>
+        <script src="js/bootstrap-wizard.min.js"></script>
+        <script src="js/select2.min.js"></script>
+
+        <script src="js/custom.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!--<script src="js/dashboard.js"></script>-->
+        <script>
+            $(function () {
+                var availableTags = [
+                    "ActionScript",
+                    "AppleScript",
+                    "Asp",
+                    "BASIC",
+                    "C",
+                    "C++",
+                    "Clojure",
+                    "COBOL",
+                    "ColdFusion",
+                    "Erlang",
+                    "Fortran",
+                    "Groovy",
+                    "Haskell",
+                    "Java",
+                    "JavaScript",
+                    "Lisp",
+                    "Perl",
+                    "PHP",
+                    "Python",
+                    "Ruby",
+                    "Scala",
+                    "Scheme"
+                ];
+                $("#tags").autocomplete({
+                    source: availableTags
+                });
+            });
+            jQuery(document).ready(function(){
+              
+                // Basic Form
+                jQuery("#basicForm").validate({
+                    highlight: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                    },
+                    success: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-error');
+                    }
+                });
+              
+                // Error Message In One Container
+                jQuery("#basicForm2").validate({
+                    errorLabelContainer: jQuery("#basicForm2 div.errorForm")
+                });
+              
+                // With Checkboxes and Radio Buttons
+                
+                jQuery('#genderError').attr('for','gender');
+                jQuery('#intError').attr('for','int[]');
+                
+                jQuery("#basicForm3").validate({
+                    highlight: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                    },
+                    success: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-error');
+                    }
+                });
+                
+                jQuery("#basicForm4").validate({
+                    highlight: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                    },
+                    success: function(element) {
+                        jQuery(element).closest('.form-group').removeClass('has-error');
+                    },
+                    ignore: null
+                });
+                
+                // Validation with select boxes
+                jQuery("#flowers, #fruits").select2({
+                    minimumResultsForSearch: -1
+                });
+              
+            });
+        </script>
+        <style>
+            .ui-autocomplete {
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: default;
+            }.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+
+        </style>    
+
+    </body>
+</html>

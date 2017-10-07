@@ -1,0 +1,70 @@
+<? 
+// Sisten Informasi Sanggar LIZA
+// Written by agusari@gmail.com
+// 10 Oktober 2010, lastupdate 10 Oktober 2010
+
+include_once("include.php");
+$sql="select date_format(a.tanggal,'%d-%m-%Y') tgl_acara,a.tanggal,b.acara,c.nama_cpw,c.nama_cpp from acara a, p_acara b, client c where a.id_acara='$id_acara' and a.id_client='$id_client' and a.id_acara=b.id_acara and a.id_client=c.id_client";
+//echo $sql;
+$rs=mysql_query($sql);
+$tgl_acara=mysql_result($rs,0,"tgl_acara");
+$tgl=mysql_result($rs,0,"tanggal");
+?>
+<table width="100%">
+<tr>
+     <td width="50%" valign="bottom" align="left"> &nbsp; 
+         <font class="titledata" color="#009900"><b>Acara</b></font>
+         </td>
+     <td width="50%" valign="bottom" align="right">
+<!--
+         <a href="<?="?menu=$menu&uid=$uid&page=assign_pekerjaan&id_acara=$id_acara&id_client=$id_client"?>"><img border='0' src='images/edit.gif' title='Edit Data'></a> &nbsp; &nbsp; 
+-->
+         </td>
+        </tr>
+      <tr><td colspan="2"> <hr size="1" color="#4B4B4B"> </td></tr>
+</table>
+<table cellpadding=3 cellspacing=0 style="border-width: 4px;  border-style: double;">
+<tr><td>Tanggal</td><td>: <?=$tgl_acara?></td></tr>
+<tr><td>Acara</td><td>: <?=mysql_result($rs,0,"acara")?></td></tr>
+<tr><td>Client</td><td>: <?=mysql_result($rs,0,"nama_cpw")?> / <?=mysql_result($rs,0,"nama_cpp")?></td></tr>
+</table>
+<table width="100%">
+<tr>
+     <td width="50%" valign="bottom" align="left"> &nbsp; 
+	     <font class="titledata" color="#009900"><b>Petugas Acara</b></font>
+		 </td>
+     <td width="50%" valign="bottom" align="right">
+	     <a href="<?="?menu=$menu&uid=$uid&page=assign_pekerjaan&id_acara=$id_acara&id_client=$id_client"?>"><img border='0' src='images/edit.gif' title='Edit Data'></a> &nbsp; &nbsp; 
+		 </td>
+		</tr>
+</table>
+<?
+$sql = "select id_pekerjaan,uraian_tugas from p_pekerjaan where id_pekerjaan in (select distinct id_pekerjaan from pegawai_tugas where tanggal='$tgl') order by id_pekerjaan";
+$res = mysql_query($sql);
+?>
+<table cellpadding=3 cellspacing=0 style="border-width: 1px;  border-style: solid;">
+<tr valign=top>
+<?
+for($a=0;$a<@mysql_num_rows($res);$a++){
+  $id_pekerjaan=mysql_result($res,$a,"id_pekerjaan");
+  if($a<@mysql_num_rows($res)){
+    echo "<td nowrap style='border-right-width: 1px;  border-right-style: solid;'><b>";
+  } else {
+    echo "<td nowrap><b>";
+  }
+  echo mysql_result($res,$a,"uraian_tugas");
+  echo "</b>";
+  $rsc=mysql_query("select b.nama from pegawai_tugas a, pegawai b where a.tanggal='$tgl' and a.id_acara='$id_acara' and a.id_client='$id_client' and a.id_pegawai=b.id_pegawai and a.id_pekerjaan='$id_pekerjaan'");
+  $jml=@mysql_num_rows($rsc);
+  echo "<table width='100%'>";
+  for($b=0;$b<$jml;$b++){
+    echo "<tr>";
+    echo "<td>&raquo;&nbsp;";echo mysql_result($rsc,$b,"nama");
+    echo "</td>";
+    echo"</tr>";
+  }
+  echo "</table>";
+}
+?>
+</tr>
+</table>

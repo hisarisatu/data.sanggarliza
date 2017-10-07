@@ -1,0 +1,184 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt
+}
+
+td {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	text-decoration:none;
+}
+
+input {
+    font-family: Verdana;
+	font-size: 9pt; border: #4B4B4B;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px ;
+	background-color: #EFEFEF
+}
+
+.texthiden {
+    font-family: Verdana;
+	font-size: 9pt; border: #FFFFFF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px ;
+	background-color: #FFFFFF
+}
+
+.edyellow {
+    font-family: Verdana;
+	font-size: 9pt; border: #4B4B4B;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px ;
+	background-color: #EFEFEF
+}
+
+#logo{float:left; background-image:url(tie_logo.gif); width:274px; height:213px;}
+#topheader{float:right; width:626px; height:97px; background-color:#F0F0F0; position:relative}
+#toplinks{position:absolute; right:10px; top:10px;}
+#menu{float:right; width:626px; height:32px; background-image:url(bg_menu.gif); background-repeat:repeat-x;}
+#submenu{float:right; width:626px; height:32px; background-image:url(bg_submenu.gif); background-position:top; background-repeat:repeat-x;}
+#contentweb{float:center; width:800px; padding:1px;}
+#contenttext{float:right; width:626px;}
+#leftpanel{float:left; width:274px;}
+#footer{float:left; width:835px; background-color:#F0F0F0; padding:10px;}
+
+/*GRAY PANEL*/
+.graypanel{
+	border:solid 1px #666666; background-color:#F7F7F7; padding:10px; margin:10px;
+}
+
+A { text-decoration:none; }
+A:hover { text-decoration:underline; }
+
+/*TEXT STYLES*/
+.bodytext {
+	font: 0.9em Tahoma, sans-serif;
+	color: #666666;
+}
+
+.titledata {
+	font: 1.5em Tahoma, sans-serif;
+}
+
+.titleacara {
+	font: 1.3em Tahoma, sans-serif;
+}
+
+.titlesubacara {
+	font: 1.2em Tahoma, sans-serif;
+	color:#FF0000;
+}
+
+.titleitems {
+	font: 0.9em Tahoma, sans-serif;
+	color: #969696;
+}
+
+.titletext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color:#CC0000;
+}
+
+.titleinfo {
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 8pt;
+	color: #666666;
+}
+
+.whitetitle {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.smalltitle {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.smallwhitetext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+.smallwhitetext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+}
+.smallwhitetext a:hover{
+	text-decoration:underline;
+}
+.smallgraytext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#999999;
+}
+.smallgraytext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#003300;
+	text-decoration:none;
+}
+.smallgraytext a:hover{
+	text-decoration:underline;
+}
+.smallredtext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.smallredtext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#CC0000;
+	text-decoration:none;
+}
+.smallredtext a:hover{
+	text-decoration:underline;
+}
+
+.datafield {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#0033CC;
+}
+
+.button {
+    font-family: Verdana;
+	font-size: 9pt; border: #4B4B4B;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px ;
+	background-color: #919191
+}
